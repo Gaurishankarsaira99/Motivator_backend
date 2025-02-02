@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
-      <h1>🔥 Your fun time, watch your favourite youtube videos</h1>
+      <h1>🔥 Watch your favourite youtube videos from here</h1>
       
       <input
         type="text"
