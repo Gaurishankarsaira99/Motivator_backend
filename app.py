@@ -1,7 +1,10 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # Import Flask-CORS
 import requests
+import os
 
 app = Flask(__name__)
+CORS(app)
 
 # Replace with your YouTube API Key
 API_KEY = "AIzaSyAe1crH7_my7noL9BWKx_hnJshwb2PTUuU"
@@ -32,3 +35,5 @@ import os
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))  # Default to 5000 for local testing
     app.run(host="0.0.0.0", port=port)
+
+
