@@ -4,11 +4,11 @@ import requests
 app = Flask(__name__)
 
 # Replace with your YouTube API Key
-API_KEY = "YOUR_YOUTUBE_API_KEY"
+API_KEY = "AIzaSyAe1crH7_my7noL9BWKx_hnJshwb2PTUuU"
 
 @app.route('/search', methods=['GET'])
 def search_videos():
-    query = request.args.get('q', 'Motivation')  # Default search = "Motivation"
+    query = request.args.get('q', 'Motivational videos')  # Default search = "Motivation"
     url = f"https://www.googleapis.com/youtube/v3/search?part=snippet&q={query}&type=video&maxResults=10&key={API_KEY}"
     
     response = requests.get(url)
